@@ -89,7 +89,7 @@ class ClientTableViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Добавление клиента", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Добавить", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
             let newClient = Clients()
             newClient.name = textField.text!
@@ -101,7 +101,7 @@ class ClientTableViewController: UITableViewController {
         
         alert.addAction(action)
         
-        alert.addAction(UIAlertAction(title: "Закрыть", style: UIAlertActionStyle.cancel, handler: {
+        alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.cancel, handler: {
             (alertAction: UIAlertAction!) in
             alert.dismiss(animated: true, completion: nil)
         }))

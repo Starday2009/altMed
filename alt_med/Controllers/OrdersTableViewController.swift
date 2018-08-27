@@ -199,7 +199,7 @@ class OrdersTableViewController: UITableViewController, UIPickerViewDataSource, 
         
         let alert = UIAlertController(title: "Запись клиента", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Добавить", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
        
             //what will happen once the user clicks the Add Item button on our UIAlert
             if let currentClient = self.selectedClient {
@@ -232,7 +232,7 @@ class OrdersTableViewController: UITableViewController, UIPickerViewDataSource, 
             self.dateTextField.inputView = datePicker
             }
 
-        alert.addAction(UIAlertAction(title: "Закрыть", style: UIAlertActionStyle.cancel, handler: {
+        alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.cancel, handler: {
             (alertAction: UIAlertAction!) in
             alert.dismiss(animated: true, completion: nil)
         }))

@@ -26,6 +26,9 @@
 		5C9FF72D20700B0800568EBD /* Orsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9FF72C20700B0800568EBD /* Orsers.swift */; };
 		5CB3929320442C2800AF4328 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3929220442C2800AF4328 /* mainViewController.swift */; };
 		5CC1E3E32047408C0054BB96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC1E3E22047408C0054BB96 /* Realm.framework */; };
+		5CD4BA02213418F600735544 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD4BA01213418F600735544 /* StartPage.swift */; };
+		5CD4BA042134242A00735544 /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD4BA032134242A00735544 /* RegisterPage.swift */; };
+		5CD4BA06213426F200735544 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD4BA05213426F200735544 /* LoginPage.swift */; };
 		5CF9A7CA2049D0BF00CF19E2 /* Clients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9A7C92049D0BF00CF19E2 /* Clients.swift */; };
 		5CF9A7CE2049DB3000CF19E2 /* clientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF9A7CD2049DB3000CF19E2 /* clientViewController.swift */; };
 		5CF9A7D22049E95700CF19E2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF9A7D12049E95700CF19E2 /* libc++.tbd */; };
@@ -80,6 +83,10 @@
 		5C9FF72C20700B0800568EBD /* Orsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orsers.swift; sourceTree = "<group>"; };
 		5CB3929220442C2800AF4328 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		5CC1E3E22047408C0054BB96 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		5CD4BA002134083F00735544 /* alt_medUITests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "alt_medUITests copy-Info.plist"; path = "/Users/ogorbachenko/Documents/alt_med/alt_medUITests copy-Info.plist"; sourceTree = "<absolute>"; };
+		5CD4BA01213418F600735544 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		5CD4BA032134242A00735544 /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
+		5CD4BA05213426F200735544 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		5CE02FA440152D368446A2B8 /* Pods_alt_medTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alt_medTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF9A7C92049D0BF00CF19E2 /* Clients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clients.swift; sourceTree = "<group>"; };
 		5CF9A7CD2049DB3000CF19E2 /* clientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clientViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +150,7 @@
 				5C5C0B912014AB610003AC30 /* Products */,
 				2E532DB447EA106394D33B83 /* Pods */,
 				B55DD823419C8B60323FBD3B /* Frameworks */,
+				5CD4BA002134083F00735544 /* alt_medUITests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +193,9 @@
 			children = (
 				5C5C0BB32014AB610003AC30 /* alt_medUITests.swift */,
 				5C5C0BB52014AB610003AC30 /* Info.plist */,
+				5CD4BA01213418F600735544 /* StartPage.swift */,
+				5CD4BA032134242A00735544 /* RegisterPage.swift */,
+				5CD4BA05213426F200735544 /* LoginPage.swift */,
 			);
 			path = alt_medUITests;
 			sourceTree = "<group>";
@@ -491,6 +502,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD4BA06213426F200735544 /* LoginPage.swift in Sources */,
+				5CD4BA042134242A00735544 /* RegisterPage.swift in Sources */,
+				5CD4BA02213418F600735544 /* StartPage.swift in Sources */,
 				5C5C0BB42014AB610003AC30 /* alt_medUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

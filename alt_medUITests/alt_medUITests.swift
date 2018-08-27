@@ -27,37 +27,30 @@ class alt_medUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-//    func testAAnEmail(){
-//       let app = XCUIApplication()
-//
-//
-//        let registerButton = app.buttons["Register"]
-//        registerButton.tap()
-//
-//        let emailTextField = app.textFields["Email"]
-//        emailTextField.tap()
-//        emailTextField.typeText("oksana1@mail.com")
-//
-//
-//        let passwordSecureTextField = app.secureTextFields["Password"]
-//        passwordSecureTextField.tap()
-//        passwordSecureTextField.typeText("qwerty")
-//        app.buttons["Regirter"].tap()
-//
-//        app.navigationBars["alt_med.RegisterView"].buttons["App Launch screen"].tap()
-//
-//        let loginButton = app.buttons["Login"]
-//        loginButton.tap()
-//        emailTextField.tap()
-//        emailTextField.typeText("oksana1@mail.com")
-//
-//        passwordSecureTextField.tap()
-//        passwordSecureTextField.typeText("qwerty")
-//        loginButton.tap()
-//        assertNavigationBar(title: "Все клиенты", "Отсутсвует навигейшен бар Все клиенты")
-//
-//
-//    }
+    func testAAnRegisterAndEmail(){
+        
+       let app = XCUIApplication()
+        let startPage = StartPage()
+        let registerPage = RegisterPage()
+        let loginPage = LoginPage()
+        
+        startPage.clickRegisterBtn()
+        
+        registerPage.enterUserName(username: "oksana1@mail.com")
+        registerPage.enterPassword(password: "qwerty")
+        registerPage.clickRegisterBtn()
+
+        app.navigationBars["alt_med.RegisterView"].buttons["App Launch screen"].tap()
+
+        startPage.clickLoginBtn()
+        loginPage.enterUserName(username: "oksana1@mail.com")
+        loginPage.enterPassword(password: "qwerty")
+        loginPage.clickLoginBtn()
+
+        assertNavigationBar(title: "Все клиенты", "Отсутсвует навигейшен бар Все клиенты")
+
+
+    }
     
     func testAddClient() {
         let app = XCUIApplication()
@@ -74,7 +67,10 @@ class alt_medUITests: XCTestCase {
         deleteButton.tap()
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
+    /**
+     - params: 1--
+     -
+     */
     func testAddOrder() {
         //my app and calendar
         let app = XCUIApplication()
@@ -84,7 +80,7 @@ class alt_medUITests: XCTestCase {
         //array with table items
 
         app.navigationBars["Все клиенты"].buttons["Add"].tap()
-        app.alerts["Добавление клиента"].textFields["Введите имя"].typeText("TestName")
+        app.alerts["Добавление клиента"].textFields["Введите имя"].typeText("Аня")
         app.alerts["Добавление клиента"].buttons["Add"].tap()
         
         
@@ -103,11 +99,11 @@ class alt_medUITests: XCTestCase {
         attachment.lifetime = .keepAlways  // Сохранять скриншот, даже если тест успешно прошел
         add(attachment)
         
-        app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "May 29")
+        app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "Aug 28")
         app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "6")
         app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "10")
         
-        app.alerts["Запись клиента"].buttons["Add Item"].tap()
+        app.alerts["Запись клиента"].buttons["Add"].tap()
 //        app.alerts["“AltMed” Would Like to Access Your Calendar"].buttons["OK"].tap()
 //
 //
